@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Placeholder Demo</title>
+    <script src="requests.js"></script>
+</head>
+
+<body>
+    <form onsubmit="newPost(); return false">
+        <input type="text" id="title" value="" placeholder="Title" />
+        <input type="text" id="body" value="" placeholder="Body" />
+        <input type="number" id="userId" value="" placeholder="userId" />
+        <button type="submit">Submit</button>
+    </form>
+    <button onclick="updatePost(1)">Update post one</button>
+    <button onclick="deletePost(1)">Delete post one</button>
+    <div id="result-container"></div>
+</body>
+
+</html>
